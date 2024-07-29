@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #0d0044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    height: 100vh;
+}
+svg{
+    width: 50vw;
+}
+
+#beam{
+    opacity: 0;
+    z-index: 90;
+}
+
+#ufo{
+    z-index: 100;
+}
