@@ -17,9 +17,5 @@ svg{
 
 #beam{
     opacity: 0;
-    z-index: 90;
 }
 
-#ufo{
-    z-index: 100;
-}
