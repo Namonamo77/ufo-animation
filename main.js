@@ -1,4 +1,3 @@
-//gsap.registerPlugin(GSDevTools) 
 
 const tl = gsap.timeline({defaults:{ease:"none"}})
 gsap.set("#ufo", {scale:.5, x:-200, autoAlpha:1})
@@ -29,4 +28,3 @@ tl.fromTo("#ufo", {x:-400, scale:.5, duration:3}, {x:800, duration:3})
     .to(".antenna", {transformOrigin: "bottom center", rotate: -26, yoyo:true, repeat:-1, ease: "bounce.inOut"}, "<")
 
 
-//GSDevTools.create({animation:tl})
