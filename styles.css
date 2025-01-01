@@ -19,3 +19,6 @@ svg{
     opacity: 0;
 }
 
+#ufo {
+    visibility: hidden;
+}

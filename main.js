@@ -1,12 +1,12 @@
-gsap.registerPlugin(GSDevTools) 
+//gsap.registerPlugin(GSDevTools) 
 
 const tl = gsap.timeline({defaults:{ease:"none"}})
-gsap.set("#ufo", {scale:.5, x:-200})
+gsap.set("#ufo", {scale:.5, x:-200, autoAlpha:1})
 let letters = gsap.utils.toArray(".letter")
 
 
 
-let ufoFlight = gsap.to("#ufo", {y:-20, yoyo:true, repeat:-1, ease:"power4.inOut", duration:1})
+let ufoFlight = gsap.to("#ufo", {y:-20, yoyo:true, repeat:-1, ease:"power3.inOut", duration:1})
 
 tl.fromTo("#ufo", {x:-400, scale:.5, duration:3}, {x:800, duration:3})
     .to("#ufo", {x:-130, duration:2, scale:1})
@@ -25,7 +25,8 @@ tl.fromTo("#ufo", {x:-400, scale:.5, duration:3}, {x:800, duration:3})
     .to(letters[11], {x:10, y:-350, scale:0, rotate: -110},"<25%")
     .to("#ufo", {x: 400, duration:2}, 6)
     .to("#beam", {opacity:0})
-    .to("#ufo", {x: 150, yPercent:30})
+    .to("#ufo", {x: 100, yPercent:30})
+    .to(".antenna", {transformOrigin: "bottom center", rotate: -26, yoyo:true, repeat:-1, ease: "bounce.inOut"}, "<")
 
 
-GSDevTools.create({animation:tl})
+//GSDevTools.create({animation:tl})
